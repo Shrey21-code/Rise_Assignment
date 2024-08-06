@@ -10,8 +10,9 @@
 <body>
     <header>
         <nav>
-            <img src="logo.jpg" alt="Logo" className="navbar-logo" />
-            <span className="navbar-title">Your Logo</span>
+            <img src="assets/logo.png" alt="Logo" className="navbar-logo" />
+            <!-- <span className="navbar-title">Your Logo</span> -->
+            <div class="nav-content">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -22,14 +23,13 @@
             <form class="search-form">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
+            </div>
         </nav>
     </header>
 
     <section id="hero">
         
-        <div class="hero-image">
-            <img src="dance.jpg" alt="Dancer">
-        </div>
+        
         <div class="hero-content">
             <h1>DANCE<br/> STUDIO</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu nunc consequat, dolor mollis.</p>
@@ -82,34 +82,17 @@
         <a href="#" class="btn">Join Now</a>
     </div>
     <div class="image-container">
-        <img src="dance.jpg" alt="Dancer">
+        <img src="assets/section4_img.png" alt="Dancer">
     </div>
 </section>
 
-    <!-- <section id="trial-class">
-        <h2>Trial Class</h2>
-        <button>Book Now</button>
-    </section> -->
 
-    <!-- <section id="statistics">
-        <div class="stat">
-            <h3>1k</h3>
-            <p>Members</p>
-        </div>
-        <div class="stat">
-            <h3>200</h3>
-            <p>Classes</p>
-        </div>
-        <div class="stat">
-            <h3>5</h3>
-            <p>Countries</p>
-        </div>
-    </section> -->
     <section class="our-statistics">
         <div class="overlay"></div>
         <div class="content">
             <h2>OUR STATISTICS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <div class="stats_bg">
             <div class="stats-container">
                 <div class="stat">
                     <h3>1k</h3>
@@ -124,51 +107,114 @@
                     <p>COUNTRY</p>
                 </div>
             </div>
+            </div>
         </div>
     </section>
     
-    <section id="classes">
-        <h2>Class Levels</h2>
-        <div class="class-level">
-            <h3>Basic</h3>
-            <button>Book</button>
-        </div>
-        <div class="class-level">
-            <h3>Intermediate</h3>
-            <button>Book</button>
-        </div>
-        <div class="class-level">
-            <h3>Advanced</h3>
-            <button>Book</button>
-        </div>
-        <div class="class-level">
-            <h3>Professional</h3>
-            <button>Book</button>
+
+
+
+     
+    <section class="class-level-section">
+        <h1>Class Level</h1>
+        <div class="class-cards">
+            <div class="class-card">
+                <h2>Basic</h2>
+                <div class="icon-placeholder">
+                    <img src="assets/dance.png" alt="Basic Class">
+                </div>
+                <p class="price">$00.00</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="join-button">Join Now</button>
+            </div>
+            <div class="class-card">
+                <h2>Dance</h2>
+                <div class="icon-placeholder">
+                    <img src="assets/dance.png" alt="Dance Class">
+                </div>
+                <p class="price">$00.00</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="join-button">Join Now</button>
+            </div>
+            <div class="class-card">
+                <h2>Professional</h2>
+                <div class="icon-placeholder">
+                    <img src="assets/dance.png" alt="Professional Class">
+                </div>
+                <p class="price">$00.00</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="join-button">Join Now</button>
+            </div>
         </div>
     </section>
 
-    <section id="slider">
-        <div class="slide">
-            <img src="slide1.jpg" alt="Slide 1">
+
+
+
+    <section class="image-container-section">
+        <div class="overlay">
+            <div class="text-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <p class="author">AIDEN RAMSEY</p>
+            </div>
         </div>
-        <div class="slide">
-            <img src="slide2.jpg" alt="Slide 2">
-        </div>
-        <div class="slide">
-            <img src="slide3.jpg" alt="Slide 3">
+    </section>
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <h1>Dance For Fun</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
 
+    
     <footer>
-        <p>&copy; 2024 Dance Studio</p>
-        <nav>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <img src="assets/logo.png" alt="Your Logo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Brand Guidelines</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">Our Product</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Payment Method</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Other</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
+  
 
     <script src="scripts.js"></script>
 </body>
