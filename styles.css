@@ -1,0 +1,491 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('Background.png');
+    background-position: -80px -10px; /* Aligns the image to the left */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #fff;
+    background-size: 150%;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+header nav .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    
+    margin: 0 1rem;
+   
+}
+
+header nav ul li a {
+    color: #5b4636;
+    text-decoration: none;
+}
+/* .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+} */
+
+.search-form button {
+    padding: 0.5rem;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #5b4636;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #5b4636;
+    margin: 1rem 0;
+    max-width: 600px;
+}
+
+.hero-content button {
+    padding: 0.8rem 5rem;
+    background-color: #5b4636;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-content button:hover {
+    background-color: #444;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f1e8; /* Light beige background color */
+    position: relative;
+}
+
+#team h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #5b4636;
+}
+
+#team p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #5b4636;
+}
+#team::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('floral-pattern.png') repeat; /* Floral pattern image */
+    opacity: 0.3; /* Adjust opacity for subtlety */
+    z-index: 1;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; /* Ensure content is above background */
+}
+
+.team-member {
+    /* background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center; */
+    position: relative;
+    /* background: url('https://3.bp.blogspot.com/-vRrCPVIVNqs/TtQZIP9DAuI/AAAAAAAAOz4/wT9512HFfTM/s1600/Design-Paper-Pattern-Floral-5.jpg') no-repeat center center;  */
+    background-size: cover;
+    margin: 0 20px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    z-index: 3;
+}
+
+.team-member img {
+    border-radius: 50%; /* Make the image perfectly circular */
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    margin-bottom: 25px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #5b4636;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 16px;
+}
+.member-bg {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    background-color: white; /* White background behind the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for image */
+    z-index: 4;
+}
+.dance-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f8f5eb;
+    background-image: url('path/to/background-pattern.png'); /* Use the appropriate path for your background pattern image */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    color: #574d41;
+    margin: 0 0 20px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #7a7168;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.start-now-btn {
+    padding: 10px 40px;
+    background-color: #5b4636;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-now-btn:hover {
+    background-color: #444;
+}
+.trial-class {
+    position: relative;
+    padding: 50px 20px;
+    background-image: url('https://3.bp.blogspot.com/-vRrCPVIVNqs/TtQZIP9DAuI/AAAAAAAAOz4/wT9512HFfTM/s1600/Design-Paper-Pattern-Floral-5.jpg');
+  
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.trial-class::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+.trial-class .content {
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+}
+
+.trial-class .content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5b4636;
+}
+
+.trial-class .content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #5b4636;
+}
+
+.trial-class .btn {
+    display: inline-block;
+    background-color: #5b4636;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.trial-class .image-container {
+    position: relative;
+    z-index: 2;
+    max-width: 40%;
+}
+
+.trial-class .image-container img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.our-statistics {
+    position: relative;
+    padding: 50px 20px;
+    background-image: url('/mnt/data/file-vhgCCBAg9Ura4sBOcEOpE2pp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:#5b4636;;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* .our-statistics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+} */
+
+/* .our-statistics .stats-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.our-statistics .stat {
+    width: 33.33%;
+    padding: 0 20px;
+}
+
+.our-statistics .stat h2 {
+    font-size: 48px;
+    margin: 0 0 10px;
+    color: #5b4636;;
+}
+
+.our-statistics .stat p {
+    font-size: 29px;
+    margin: 0;
+   
+    text-transform: uppercase;
+    color:#5b4636;;
+}
+
+.our-statistics .stats-container .stat:not(:last-child) {
+    border-right: 4px dashed #5b4636;;
+} */
+
+
+.our-statistics {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('/mnt/data/file-vhgCCBAg9Ura4sBOcEOpE2pp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #333;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+
+.our-statistics .content {
+    position: relative;
+    z-index: 2;
+}
+
+.our-statistics h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #5b4636;
+}
+
+.our-statistics p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color:#5b4636;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size:60px;
+    margin: 0 0 10px;
+    color: #5b4636;
+}
+
+.stat p {
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #5b4636;
+}
+
+.stat:not(:last-child) {
+    border-right: 2px dashed #5b4636;;
+    padding-right: 20px;
+}
+
+.stat:last-child {
+    padding-left: 20px;
+}
+
+
+ #trial-class, #statistics, #classes, #slider, footer {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.team-member, .stat, .class-level {
+    margin: 1rem 0;
+}
+
+#slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+footer nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .team-member, .stat, .class-level {
+        display: inline-block;
+        width: 23%;
+        margin: 1%;
+    }
+}
